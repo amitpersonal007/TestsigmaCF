@@ -1,0 +1,58 @@
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.test</groupId>
+  <artifactId>test</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>test</name>
+  <description>test</description>
+  <dependencies>
+  <!-- https://mvnrepository.com/artifact/io.github.testsigma-eng/testsigma-customfunctions -->
+<!-- https://mvnrepository.com/artifact/io.github.testsigma-eng/testsigma-customfunctions -->
+<dependency>
+    <groupId>io.github.testsigma-eng</groupId>
+    <artifactId>testsigma-customfunctions</artifactId>
+    <version>1.4</version>
+</dependency>
+
+
+<dependency>
+    <groupId>com.jayway.jsonpath</groupId>
+    <artifactId>json-path</artifactId>
+    <version>2.7.0</version>
+</dependency>
+<dependency>
+    <groupId>org.jboss.aerogear</groupId>
+    <artifactId>aerogear-otp-java</artifactId>
+    <version>1.0.0</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/com.google.oauth-client/google-oauth-client -->
+<dependency>
+    <groupId>com.google.oauth-client</groupId>
+    <artifactId>google-oauth-client</artifactId>
+    <version>1.32.1</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-support -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-support</artifactId>
+    <version>3.141.59</version>
+</dependency>
+
+<dependency>
+    <groupId>io.appium</groupId>
+    <artifactId>java-client</artifactId>
+    <version>7.6.0</version>
+</dependency>
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>3.141.59</version>
+</dependency>
+<dependency>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-lang3</artifactId>
+    <version>3.11</version>
+</dependency>
+  </dependencies>
+</project>
