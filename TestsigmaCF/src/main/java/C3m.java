@@ -32,7 +32,7 @@ public class C3m extends TestsigmaCustomFunctions{
         
             setRuntimeData(runtimevarname,complete24HURL);
             result.setStatus(ResultConstants.SUCCESS);
-            result.setMessage("The complete URL is "+complete24HURL+" and its stored in runtime variable name "+runtimevarname);
+            result.setMessage("The complete URL is "+complete24HURL+" and itss stored in runtime variable name "+runtimevarname);
     		
     	}catch(Exception e) {
     		
