@@ -27,7 +27,7 @@ public class SafariKeyPress extends TestsigmaCustomFunctions{
     	
          	
         
-          
+   
             result.setStatus(ResultConstants.SUCCESS);
             result.setMessage("The complete URL is ");
     		
