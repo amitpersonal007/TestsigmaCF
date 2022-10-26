@@ -27,7 +27,7 @@ public class NtucConvertPayloadInNumber extends TestsigmaCustomFunctions{
 	 try {
 		 
 		 String var = getRuntimeData(runtimevar);
-		 int var1 = Integer.getInteger(var);
+		 int var1 = Integer.parseInt(var);
 		 
 		 OkHttpClient client = new OkHttpClient().newBuilder()
 				 .build();
