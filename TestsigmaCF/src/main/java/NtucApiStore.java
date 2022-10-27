@@ -22,7 +22,7 @@ public class NtucApiStore extends TestsigmaCustomFunctions{
     
    
   	@CustomTestStep
-	public TestStepResult MapApi(String desiredruntimevarname , String id ) throws IOException {
+	public TestStepResult MapApi(String desiredruntimevarname , String id , String BearerToken ) throws IOException {
   		 TestStepResult result= new TestStepResult();
 	    
 	      
@@ -31,6 +31,7 @@ public class NtucApiStore extends TestsigmaCustomFunctions{
 	 try {
 		 
 		 String id1 = getRuntimeData(id);
+		 String accesstoken = getRuntimeData(BearerToken);
 		 OkHttpClient client = new OkHttpClient().newBuilder()
 				  .build();
 				MediaType mediaType = MediaType.parse("text/plain");
@@ -38,7 +39,7 @@ public class NtucApiStore extends TestsigmaCustomFunctions{
 				Request request = new Request.Builder()
 				  .url("https://storetech-uat.fairprice.com.sg/store/v0.2/customers/unblock/"+id1+"")
 				  .method("PUT", body)
-				  .addHeader("Authorization", "Bearer safdsfsfsf")
+				  .addHeader("Authorization", "Bearer "+accesstoken+"")
 				  .build();
 				Response response = client.newCall(request).execute();
 				
