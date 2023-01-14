@@ -30,7 +30,7 @@ public class AddAadharCard extends TestsigmaCustomFunctions{
         	   
          
             result.setStatus(ResultConstants.SUCCESS);
-            result.setMessage("The aadharcard Generated is  "+AadharCard+"  and is stored in runtime variable "+runtimeVarname);
+            result.setMessage("The aadharcard Generated is  "+AadharCard+"  and is stored in runtime variables "+runtimeVarname);
                 
             
         } catch (Exception e) {
