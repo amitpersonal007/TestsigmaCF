@@ -36,7 +36,7 @@ public class AddAadharCard extends TestsigmaCustomFunctions{
         } catch (Exception e) {
             
             result.setStatus(ResultConstants.FAILURE);
-            result.setMessage("Unable to perform action. The URL used is "+sb+   "     " +e.getCause()+e.getMessage());
+            result.setMessage("Unable to perform action. The URL used issdasd "+sb+   "     " +e.getCause()+e.getMessage());
             
             e.printStackTrace();
         }
