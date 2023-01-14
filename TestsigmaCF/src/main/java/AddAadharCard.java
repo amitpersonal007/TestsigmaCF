@@ -30,13 +30,13 @@ public class AddAadharCard extends TestsigmaCustomFunctions{
         	   
          
             result.setStatus(ResultConstants.SUCCESS);
-            result.setMessage("The aadharcard Generated is  "+AadharCard+"  and is stored in runtime variables "+runtimeVarname);
+            result.setMessage("The aadharcard Generated is  "+AadharCard+"  and is stored in runtime variable "+runtimeVarname);
                 
             
         } catch (Exception e) {
             
             result.setStatus(ResultConstants.FAILURE);
-            result.setMessage("Unable to perform action. The URL used issdasd "+sb+   "     " +e.getCause()+e.getMessage());
+            result.setMessage("Unable to perform action. The URL used is "+sb+   "     " +e.getCause()+e.getMessage());
             
             e.printStackTrace();
         }
