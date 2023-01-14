@@ -7,7 +7,6 @@ import com.testsigma.customfunc.result.TestStepResult;
 import java.util.Random;
 
 import org.apache.commons.lang3.RandomStringUtils;
-import org.apache.commons.lang3.StringUtils;
 
 
 public class AddAadharCard extends TestsigmaCustomFunctions{
@@ -42,13 +41,8 @@ public class AddAadharCard extends TestsigmaCustomFunctions{
             e.printStackTrace();
         }
       
-    
           return result;  
-          
-        
-            
+               
       }
-      
-      
-      
+        
 }
