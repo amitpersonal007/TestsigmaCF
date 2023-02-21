@@ -45,7 +45,7 @@ public class PatternCdmx extends TestsigmaCustomFunctions {
 
         
                 result.setStatus(ResultConstants.SUCCESS);
-                result.setMessage("Successfully created new data with runtime var name "+runtimevarname+ "   having value "+replaceString);
+                result.setMessage("Successfully created new data with runtime var name "+runtimevarname+ "   having value "+finalString);
 				
 								
 			}
