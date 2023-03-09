@@ -11,19 +11,16 @@ public class ConCat extends TestsigmaCustomFunctions{
     
    
       @CustomTestStep
-    public TestStepResult concat(String completeURL ) {
+    public TestStepResult concat(String runtimevarname ) {
            TestStepResult result= new TestStepResult();
            StringBuffer sb = new StringBuffer();
            
            try {
                
-            String test = StringUtils.substringBetween(completeURL, "|");
-            String data = getTestDataParamterValue(test);
-            String newURL=  completeURL.replace("@|"+test+"|", data);
-            sb.append(newURL);
-            driver.get(newURL);
+           String str = "testsigma";
+           setRuntimeData(runtimevarname,str);
              result.setStatus(ResultConstants.SUCCESS);
-            result.setMessage("The new URL is "+newURL);
+            result.setMessage("The new runtime variable is"+runtimevarname );
                 
             
         } catch (Exception e) {
