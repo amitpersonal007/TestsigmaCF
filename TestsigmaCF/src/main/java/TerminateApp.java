@@ -1,11 +1,13 @@
 import com.testsigma.customfunc.common.CustomTestStep;
+import com.testsigma.customfunc.common.TestsigmaCustomFunctions;
 import com.testsigma.customfunc.result.ResultConstants;
 import com.testsigma.customfunc.result.TestStepResult;
-import org.openqa.selenium.JavascriptExecutor;
-import com.testsigma.customfunc.common.TestsigmaCustomFunctions;
+import io.appium.java_client.android.AndroidDriver;
+
+import java.time.Duration;
 
 
-public class ClickOnDownload extends TestsigmaCustomFunctions {
+public class TerminateApp extends TestsigmaCustomFunctions {
 
     @CustomTestStep
     public TestStepResult clickonDownload() {
@@ -13,9 +15,9 @@ public class ClickOnDownload extends TestsigmaCustomFunctions {
 
         try {
 
-            String path = "document.querySelector(\"body > downloads-manager\").shadowRoot.querySelector(\"#frb0\").shadowRoot.querySelector(\"#url\").click();";
-            JavascriptExecutor jse=(JavascriptExecutor)driver;
-             jse.executeScript(path);
+            AndroidDriver d = (AndroidDriver)driver;
+            d.terminateApp("com.recette.openeat");
+            d.runAppInBackground(Duration.ofSeconds(10));
 
             result.setStatus(ResultConstants.SUCCESS);
             result.setMessage("Successfully clicked on downloads ");
@@ -33,3 +35,4 @@ public class ClickOnDownload extends TestsigmaCustomFunctions {
 
     }
 }
+
